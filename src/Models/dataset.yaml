@@ -1,0 +1,6 @@
+path: C:/Jean Eudes Folder/_Projects/Computer_Vision_Project/CarDetection&Tracking/src/Dataset
+train: train_augmented/images
+val: val/images
+
+nc: 1
+names: ['car']
