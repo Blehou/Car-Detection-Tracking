@@ -4,17 +4,21 @@ About Dataset
 - The annotations are provided in the YOLO text format, which includes class labels and bounding box coordinates.
 - This dataset is useful for object detection tasks such as vehicle recognition and traffic analysis.
 
-# 1. Visualiser les images de train originales avec bounding boxes
+--
+
+## Steps
+
+1. View the original train images with bounding boxes
 python main.py --load
 
-# 2. Générer les images augmentées dans train_augmented/
+2. Generate the augmented images in train_augmented/
 python main.py --augment --n_aug 3
 
-# 3. Entraîner YOLOv8 sur les données augmentées (déjà définies dans dataset.yaml)
+3. Train YOLOv8 on the augmented data (already defined in dataset.yaml)
 python main.py --train
 
-# 4. Faire des prédictions sur les images de validation
+4. Make predictions on the validation images
 python main.py --predict
 
-# 5. Visualiser les images prédictes dans src/Outcomes/predictions
+5. View the predicted images in src/Outcomes/predictions
 python main.py --view
